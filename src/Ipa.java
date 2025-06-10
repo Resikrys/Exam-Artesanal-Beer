@@ -26,4 +26,9 @@ public class Ipa extends Beer {
     public  void maturation() {
         System.out.println("Ipa maturation process");
     }
+
+    public String toString() {
+        return "Name: " + getName() + ", alcohol: " + getAlcohol() + "%, container: " + getContainer() +
+                ", manufacture Date: " + getManufactureDate() + ", hop quantity: " + getHopQuantity();
+    }
 }

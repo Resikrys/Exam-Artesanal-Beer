@@ -30,17 +30,22 @@ public abstract class Beer {
     }
 
     @Override
-    public abstract void fermentation() {
+    public void fermentation() {
         System.out.println("Step 1: Beer fermentation process");
     }
 
     @Override
-    public abstract void ingredients() {
+    public void ingredients() {
         System.out.println("Step 2: Adding ingredients");
     }
 
     @Override
-    public abstract void maturation() {
+    public void maturation() {
         System.out.println("Step 3: Beer maturation process");
     }
+
+    public String toString() {
+        return "Name: " + getName() + ", alcohol: " + getAlcohol() + "%, container: " + getContainer() + ", manufacture Date: " + getManufactureDate();
+    }
+
 }

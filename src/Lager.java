@@ -26,4 +26,9 @@ public class Lager extends Beer {
     public  void maturation() {
         System.out.println("Lager maturation process");
     }
+
+    public String toString() {
+        return "Name: " + getName() + ", alcohol: " + getAlcohol() + "%, container: " + getContainer() +
+                ", manufacture Date: " + getManufactureDate() + ", fermentation temperature: " + getFermentationTemperature();
+    }
 }

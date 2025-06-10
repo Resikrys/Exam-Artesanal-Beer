@@ -26,4 +26,9 @@ public class Stout extends Beer {
     public  void maturation() {
         System.out.println("Stout maturation process");
     }
+
+    public String toString() {
+        return "Name: " + getName() + ", alcohol: " + getAlcohol() + "%, container: " + getContainer() +
+                ", manufacture Date: " + getManufactureDate() + ", malt type: " + getMaltType();
+    }
 }
