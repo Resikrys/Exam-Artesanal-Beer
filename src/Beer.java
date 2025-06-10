@@ -28,4 +28,19 @@ public abstract class Beer {
     public Date getManufactureDate() {
         return manufactureDate;
     }
+
+    @Override
+    public abstract void fermentation() {
+        System.out.println("Step 1: Beer fermentation process");
+    }
+
+    @Override
+    public abstract void ingredients() {
+        System.out.println("Step 2: Adding ingredients");
+    }
+
+    @Override
+    public abstract void maturation() {
+        System.out.println("Step 3: Beer maturation process");
+    }
 }

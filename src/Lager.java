@@ -11,4 +11,19 @@ public class Lager extends Beer {
     public double getFermentationTemperature() {
         return fermentationTemperature;
     }
+
+    @Override
+    public  void fermentation() {
+        System.out.println("Lager beer is fermented at a special temperature.");
+    }
+
+    @Override
+    public  void ingredients() {
+        System.out.println("Adding lager ingredients");
+    }
+
+    @Override
+    public  void maturation() {
+        System.out.println("Lager maturation process");
+    }
 }
